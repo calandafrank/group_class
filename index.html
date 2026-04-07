@@ -131,12 +131,10 @@
                 }
 
                 const messageText = 
-`【首次體驗預約】請點 ➤ 送出
+`【團班體驗／購課】請點 ➤ 送出
 　
  ✦ ${params.get('name') || '未填寫'} ${params.get('phone') || '未填寫'}
- ✦ ${params.get('location') || '未選擇'} ${params.get('trainer') || '無'}
- ✦ ${params.get('promocamp') || '無'} ${params.get('referer') || '無'} 
- ✦ ${params.get('datetime') || ''}`;
+ ✦ ${params.get('coursePlan') || '未選擇'} ${params.get('courseName') || '無'}
 
                 try {
                     if (liff.isInClient()) {
